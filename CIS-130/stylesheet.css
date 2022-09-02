@@ -1,0 +1,28 @@
+img {
+    width: 50%;
+    height: auto;  
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+html{
+ 
+    
+    text-align: center;
+}
+
+h1{
+    
+    font-weight: bold;
+}
+
+h2{
+    font-size: large;
+    font-weight: bold;
+}
+
+p{
+    font-size:medium;
+
+}
