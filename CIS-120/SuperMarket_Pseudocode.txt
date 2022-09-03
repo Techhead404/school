@@ -1,0 +1,34 @@
+//Supermarket unit price of products 
+
+//Declare Variables
+
+	string ItemName
+	float TotalPrice
+	float UnitPrice
+	float PoundPrice
+	int Pounds
+	int Ounces
+	
+//Assign Variables
+
+	write "What is the products name?"
+	input ItemName 
+	
+	write "What is the products price per pound?:
+	input PoundPrice
+	
+	write "How many pounds is the item?"
+	input Pounds
+	
+	write "How many ounces is the item?"
+	input Ounces
+	
+//Proccess
+
+	UnitPrice = PoundPrice / 16
+	TotalPrice = PoundPrice * (Pounds + Ounces/16)
+	
+//OutPut
+	
+	write ItemName + "cost" + UnitPrice + "per pound"
+	write ItemName + "has a total cost of " + TotalPrice
