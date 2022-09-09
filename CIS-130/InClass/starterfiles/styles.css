@@ -1,0 +1,28 @@
+
+body {
+    background-color: #84596b;
+     color: #F7F5F8
+}
+header{
+    background-color:#603A40;
+    color:  #e9e3eb;
+    padding: 25px;
+}
+h1 {
+    text-shadow: 2px 2px 5px black;
+}
+section {
+    text-align: left;
+    border-width: 2px;
+    border-style: solid;
+    padding: 10px;
+    color: #191716;
+}
+footer{
+    font-weight: bold;
+    font-style: italic;
+}
+
+div #container {
+     text-align: center;
+}
