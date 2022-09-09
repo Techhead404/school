@@ -1,31 +1,56 @@
+html {
+	
+	font-size: 14px;
+}
 img {
     width: 25%;
     height: auto;  
     padding-top: .5%;
     padding-bottom: .5%;
-    
-
 }
+
 header{
     background-color: #1a1e24;
     text-align: center;
     border: gray;
     border: 1px solid gray;
-    
-    
+       
+}
+nav{
+    width: 25%;
+      margin-left: 37%;
+      font-size: large;
+      
+}
+
+ul li{
+    display: inline;
+    color: aliceblue;
+}
+nav ul li a{
+    color: chartreuse;
 }
 
 body{
     background-color: rgb(26, 25, 25);
     
 }
+article{
+    display: grid;
+}
+
 div{
     background-color: rgb(36, 36, 36);
-    width: 50%;
-    margin-left: 25%;
-    text-align: center;
     border: 1px solid gray;
-    margin-bottom: 5px;
+    margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+    
     
 }
 h1{
@@ -37,7 +62,7 @@ h1{
 }
 
 h2{
-    font-size: large;
+    font-size: larger;
     font-weight: bold;
     color: greenyellow;
     text-align: left;
