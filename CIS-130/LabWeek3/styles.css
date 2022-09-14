@@ -1,38 +1,45 @@
-#container{
+#container {
     margin: auto;
     width: 80%;
 }
 
-#main-image{
+#main-image {
     width: 480px;
     float: left;
-    margin-right:2%;
+    margin-right: 2%;
 }
-#second-image{
+
+#second-image {
     width: 480px;
     float: right;
     margin-left: 2%;
 }
-body{
+
+body {
     background-color: rgb(36, 35, 35);
 }
-section{
+
+section {
     padding: 5%;
     border: 2px solid lightslategray;
     background-color: azure;
 }
-h2{
+
+h2 {
     margin-top: 1px;
     margin-bottom: 5%;
     text-align: center;
 }
-p{
+
+p {
     font-size: 24px;
 }
-li{
+
+li {
     font-size: 18px;
 }
-article{
+
+article {
     margin-top: 5%;
     font-size: 12px;
 }
