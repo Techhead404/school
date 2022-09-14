@@ -1,0 +1,20 @@
+body{
+    background-color: lightblue;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20x;
+}
+ol{
+    outline-style: double;
+}
+img{
+    display:block;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 40%;
+}
