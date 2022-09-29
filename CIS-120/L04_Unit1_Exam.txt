@@ -1,0 +1,14 @@
+//L04 Unit 1 Exam
+//Dillon Greek
+
+
+write "Whats your name?"
+name = input
+
+write "Where are you from?
+city = input
+
+write "What state is that?
+state = input
+
+write "Hello, " + name + " I see you are from " + city + " Your home state is " + state + " Thank you for using the gather." 
