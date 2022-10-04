@@ -1,16 +1,26 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
 
 body {
+
     background-color: #84596b;
-     color: #F7F5F8
+    color: #F7F5F8;
+    text-align: center;
 }
-header{
-    background-color:#603A40;
-    color:  #e9e3eb;
+
+header {
+    background-color: #603A40;
+    color: #e9e3eb;
     padding: 25px;
 }
+
 h1 {
     text-shadow: 2px 2px 5px black;
+    font-family: 'Roboto', sans-serif;
 }
+
 section {
     text-align: left;
     border-width: 2px;
@@ -18,11 +28,45 @@ section {
     padding: 10px;
     color: #191716;
 }
-footer{
+
+footer {
     font-weight: bold;
     font-style: italic;
 }
 
 div #container {
-     text-align: center;
+    text-align: center;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    align-content: center;
+    box-shadow: 0px 10px 5px #191716;
+    background-color: #b6a4bc;
+}
+
+.odd {
+    background-color: #E9E3Eb;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    color: #84596b;
+}
+
+figure {
+    color: black;
 }

@@ -1,0 +1,45 @@
+#container {
+    margin: auto;
+    width: 80%;
+}
+
+#main-image {
+    width: 480px;
+    float: left;
+    margin-right: 2%;
+}
+
+#second-image {
+    width: 480px;
+    float: right;
+    margin-left: 2%;
+}
+
+body {
+    background-color: rgb(36, 35, 35);
+}
+
+section {
+    padding: 5%;
+    border: 2px solid lightslategray;
+    background-color: azure;
+}
+
+h2 {
+    margin-top: 1px;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+p {
+    font-size: 24px;
+}
+
+li {
+    font-size: 18px;
+}
+
+article {
+    margin-top: 5%;
+    font-size: 12px;
+}
