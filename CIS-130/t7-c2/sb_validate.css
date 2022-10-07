@@ -13,3 +13,14 @@
 
 
 /* Validation Styles */
+input:not([type=radio]):focus {
+   background-color: rgb(255, 218, 165);
+}
+
+input:not([type=radio]):focus:valid {
+   background-color: rgb(215, 255, 215);
+}
+
+input:not([type=radio]):focus:not(valid) {
+   background-color: rgb(255, 245, 215);
+}

@@ -123,47 +123,76 @@
          </datalist>
          <fieldset id="creditCard">
             <legend>Credit Card (required)</legend>
-            <fieldset class="cardLabel">
-               <label class="cardLabel"></label>
-               <option value="amex">Amex</option>
-               <label class="cardLabel"></label>
-               <option value="discover">Discover</option>
-               <label class="cardLabel"></label>
-               <option value="master">Master</option>
-               <label class="cardLabel"></label>
-               <option value="visa">Visa</option>
+            <fieldset>
+               <label class="cardLabel" for="amex"><img src="sb_amex.png" alt="amex"></label>
+               <input type="radio" id="amex" name="amex" value="amex">
+               <label class="cardLabel" for="discover"><img src="sb_discover.png" alt="discover"></label>
+               <input type="radio" id="discover" name="discover" value="discover">
+               <label class="cardLabel" for="master"><img src="sb_master.png" alt="master"></label>
+               <input type="radio" id="master" name="master" value="master">
+               <label class="cardLabel" for="visa"><img src="sb_visa.png" alt="visa"></label>
+               <input type="radio" id="visa" name="visa" value="visa">
             </fieldset>
-         </fieldset>
-      </form>
-      <aside>
-         <h1>Menu Ideas</h1>
-         <h2>Salt-Roasted Pecans</h2>
-         <ul>
-            <li>2 cups pecans</li>
-            <li>3 Tbs. butter, melted</li>
-            <li>1 1/4 tsp. fine sea salt</li>
-         </ul>
-         <p>Preheat oven to 325&deg;. Toss pecans and butter together;
-            add salt and toss again. Spread in a single layer on a baking
-            sheet. Bake about 15 minutes. Cook on baking sheet.
-         </p>
 
-         <h2>Dried Beef Sticks</h2>
-         <ul>
-            <li>5 lbs. ground chuck</li>
-            <li>5 Tbs. quick salt</li>
-            <li>3 tsp. mustard seed</li>
-            <li>2 tsp. granulated garlic</li>
-            <li>2 tsp. cracked pepper</li>
-            <li>1 Tbs. hickory smoked salt</li>
-            <li>1 Tbs. liquid smoke</li>
-         </ul>
-         <p>Mix beef and season. Place in a large covered container
-            for three days.
-            On third day, shape beef into sticks, and bake at 150&deg; for
-            8 hours (turn half-way through).
-         </p>
-      </aside>
+            <label>Credit Card Number</label>
+            <input type="text" id="cardBox" required
+               pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$">
+            <label>Expiration Date</label>
+            <input list="month" id="monthList" placeholder="--Month--" required>
+            <datalist id="month">
+               <option value="01"></option>
+               <option value="02"></option>
+               <option value="03"></option>
+               <option value="04"></option>
+               <option value="05"></option>
+               <option value="06"></option>
+               <option value="07"></option>
+               <option value="08"></option>
+               <option value="09"></option>
+               <option value="10"></option>
+               <option value="11"></option>
+               <option value="12"></option>
+            </datalist>
+            <input list="year" id="yearList" placeholder="--Year--" required>
+            <datalist id="year">
+               <option value="2022"></option>
+               <option value="2023"></option>
+               <option value="2024"></option>
+               <option value="2025"></option>
+            </datalist>
+            <label>CSC</label>
+            <input type="text" id="cscBox" pattern="^\d{3}$" maxlength="3" placeholder="nnn" required>
+         </fieldset>
+         <button type="submit"><img src="sb_button.png" alt="next"></button>
+         <aside>
+            <h1>Menu Ideas</h1>
+            <h2>Salt-Roasted Pecans</h2>
+            <ul>
+               <li>2 cups pecans</li>
+               <li>3 Tbs. butter, melted</li>
+               <li>1 1/4 tsp. fine sea salt</li>
+            </ul>
+            <p>Preheat oven to 325&deg;. Toss pecans and butter together;
+               add salt and toss again. Spread in a single layer on a baking
+               sheet. Bake about 15 minutes. Cook on baking sheet.
+            </p>
+
+            <h2>Dried Beef Sticks</h2>
+            <ul>
+               <li>5 lbs. ground chuck</li>
+               <li>5 Tbs. quick salt</li>
+               <li>3 tsp. mustard seed</li>
+               <li>2 tsp. granulated garlic</li>
+               <li>2 tsp. cracked pepper</li>
+               <li>1 Tbs. hickory smoked salt</li>
+               <li>1 Tbs. liquid smoke</li>
+            </ul>
+            <p>Mix beef and season. Place in a large covered container
+               for three days.
+               On third day, shape beef into sticks, and bake at 150&deg; for
+               8 hours (turn half-way through).
+            </p>
+         </aside>
 
    </section>
 
