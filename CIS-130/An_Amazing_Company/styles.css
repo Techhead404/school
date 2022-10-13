@@ -1,9 +1,9 @@
 html {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(27, 27, 27);
 }
 
 nav {
-    background-color: rgb(68, 68, 90);
+    background-color: rgb(36, 36, 185);
     text-align: right;
     text-decoration: none;
     margin: auto;
@@ -19,7 +19,7 @@ nav {
 a:link {
     color: rgb(255, 255, 255);
     text-decoration: none;
-    margin-right: 1em;
+    margin-right: 3em;
 
 }
 
@@ -43,7 +43,7 @@ body {
     display: block;
     width: 600px;
     height: auto;
-    margin-top: 10em;
+    margin-top: 5em;
     box-shadow: 1px 1px 10px rgb(255, 255, 255), 1px 1px 10px rgb(0, 38, 255);
 }
 
@@ -74,17 +74,24 @@ div .gallery img {
     box-shadow: 1px 1px 10px rgb(255, 255, 255), 1px 1px 10px rgb(0, 38, 255);
 
 }
-
+div .gallery img:hover{
+    box-shadow: 1px 1px 15px rgb(255, 255, 255), 1px 1px 15px rgb(0, 38, 255);
+}
+#contact_p{
+    margin-top: 5em;;
+}
 form {
     display: block;
     font-size: 0.9em;
     margin: auto;
-    margin-top: 10em;
+    margin-top: 5em;
     margin-bottom: 10em;
     width: 180px;
     text-align: center;
 }
-
+button{
+    margin-top: 2em;
+}
 footer {
 
     font-size: small;
@@ -93,5 +100,5 @@ footer {
     bottom: 0;
     width: 99%;
     color: rgb(0, 0, 0);
-    background-color: rgb(68, 68, 90);
+    background-color: rgb(0,38, 255);
 }
