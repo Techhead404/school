@@ -1,5 +1,6 @@
 html {
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(0, 0, 0);
+
 }
 
 nav {
@@ -33,53 +34,108 @@ a:hover {
 
 body {
     text-align: center;
-    width: auto;
+    margin: auto;
+    width: 100%;
     color: white;
+    background-color: rgb(27, 27, 27);
+
+
 
 }
 
 #main_image {
     margin: auto;
     display: block;
-    width: 600px;
+    width: 700px;
     height: auto;
-    margin-top: 5em;
+    margin-top: 2em;
     box-shadow: 1px 1px 10px rgb(255, 255, 255), 1px 1px 10px rgb(0, 38, 255);
+}
+
+header {
+    background-color: black;
+    border-bottom-right-radius: 50px;
+
 }
 
 h1 {
     font-size: 48px;
-    color: white;
-    text-shadow: 0px 0px 5px #003cff, 0px 0px 8px #ffffff;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px #313131;
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 100;
 }
 
 h2 {
     border-bottom: 2px solid rgb(153, 150, 150);
     width: fit-content;
     margin: auto;
+    font-family: 'Caramel', cursive;
+    font-size: 38px;
+    font-weight: 100;
+    margin-bottom: 2%;
+
+}
+
+#intro {
+    margin-top: 5%;
+    font-size: 23px;
+}
+
+p {
+    width: 75%;
+    margin: auto;
+
+}
+
+#index_banner {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 5%;
+
 }
 
 div .gallery {
     margin: auto;
     display: inline;
     width: auto;
+}
 
-
+div .gallery2 {
+    margin: auto;
+    display: inline;
+    width: auto;
 }
 
 div .gallery img {
     width: auto;
     height: 250px;
     margin: 25px;
-    box-shadow: 1px 1px 10px rgb(255, 255, 255), 1px 1px 10px rgb(0, 38, 255);
+    box-shadow: 1px 1px 6px rgb(255, 255, 255), 1px 1px 10px rgb(0, 38, 255);
 
 }
-div .gallery img:hover{
+
+div .gallery2 img {
+    width: 375px;
+    height: 250px;
+    margin: 25px;
+    box-shadow: 1px 1px 6px rgb(255, 255, 255), 1px 1px 10px rgb(0, 38, 255);
+
+}
+
+div .gallery img:hover {
     box-shadow: 1px 1px 15px rgb(255, 255, 255), 1px 1px 15px rgb(0, 38, 255);
 }
-#contact_p{
-    margin-top: 5em;;
+
+div .gallery2 img:hover {
+    box-shadow: 1px 1px 15px rgb(255, 255, 255), 1px 1px 15px rgb(0, 38, 255);
 }
+
+#contact_p {
+    margin-top: 5em;
+
+}
+
 form {
     display: block;
     font-size: 0.9em;
@@ -89,16 +145,19 @@ form {
     width: 180px;
     text-align: center;
 }
-button{
+
+button {
     margin-top: 2em;
 }
+
 footer {
 
     font-size: small;
-    position: relative;
+    position: static;
     text-align: center;
     bottom: 0;
-    width: 99%;
-    color: rgb(0, 0, 0);
-    background-color: rgb(0,38, 255);
+    width: 100%;
+    margin-top: 6em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(36, 36, 36);
 }
