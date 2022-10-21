@@ -1,3 +1,8 @@
+/*
+        Name: Dillon Greek
+        Class: CIS-130
+        Assignment: Amazing Company
+*/
 html {
     background-color: rgb(0, 0, 0);
 
@@ -46,7 +51,7 @@ body {
 #main_image {
     margin: auto;
     display: block;
-    width: 700px;
+    width: 100%;
     height: auto;
     margin-top: 2em;
     box-shadow: 1px 1px 10px rgb(255, 255, 255), 1px 1px 10px rgb(0, 38, 255);
@@ -151,7 +156,6 @@ button {
 }
 
 footer {
-
     font-size: small;
     position: static;
     text-align: center;
