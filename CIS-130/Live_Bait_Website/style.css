@@ -1,5 +1,56 @@
-html{
+html {
     margin: auto;
     text-align: center;
-    background-color: ivory;
+    background-color: rgb(179, 208, 253);
+}
+
+nav {
+    margin-bottom: 3em;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    text-align: center;
+}
+
+table {
+    width: 500px;
+    margin: auto;
+
+}
+
+thead {
+    background-color: green;
+
+}
+
+section #promo {
+    background-color: blue;
+    width: 75%;
+    margin: auto;
+}
+
+#promo1 {
+    background-color: white;
+    color: blue;
+    width: 50%;
+    margin: auto;
+    border-radius: 25%;
+}
+
+#promo2 {
+    background-color: chartreuse;
+    color: blue;
+    width: 50%;
+    margin: auto;
+    border-radius: 25%;
+}
+
+aside {
+    float: right;
+    padding-right: 2%;
 }
