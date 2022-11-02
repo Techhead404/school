@@ -1,7 +1,7 @@
 html {
     margin: auto;
     text-align: center;
-    background-color: rgb(179, 208, 253);
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
@@ -71,6 +71,8 @@ aside {
     max-width: 650px;
     position: relative;
     margin: auto;
+    background-color: blue;
+    padding-bottom: 2em;
 }
 
 /* Hide the images by default */
@@ -81,6 +83,8 @@ aside {
 .mySlides img {
     max-width: 650px;
     max-height: 720px;
+    height: 720px;
+    width: auto;
 }
 
 /* Next & previous buttons */
