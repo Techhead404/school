@@ -10,11 +10,13 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
 </head>
 
 <body>
     <header>
+
         <h1>Live Bait</h1>
         <nav>
             <a href="index.html">Home</a>
@@ -29,10 +31,57 @@
             <li>1.2lb Crappie</li>
         </ul>
     </aside>
-    <section id="promo1" class="promo">
-        <h2>Catch Of The Week!</h2>
-        <img>
-    </section>
+    <div class="slideshow-container">
+        <h2>Happy Customers</h2>
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="img/6258.jpeg" style="width:100%">
+            <div class="text">Channel Catfish Truman Lake</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="img/PXL_20220405_181149312.jpg" style="width:100%">
+            <div class="text">Angry 2 year old!</div>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="img/IMG_20180714_072649800_BURST000_COVER_TOP.jpg" style="width:100%">
+            <div class="text">Crappie Fellows Lake</div>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="img/6365 (1).jpeg" style="width:100%">
+            <div class="text">Spoonbill Truman Lake</div>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="img/IMG_20190517_091156.jpg" style="width:100%">
+            <div class="text">Perch Fellows Lake</div>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="img/6618.jpeg" style="width:100%">
+            <div class="text">Blue Catfish Truman Lake</div>
+        </div>
+        <div class="mySlides">
+            <div class="numbertext"></div>
+            <img src="img/5510.jpeg" style="width:100%">
+            <div class="text">Channel and Flat Head Stockton Lake</div>
+        </div>
+
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="showSlides(1)"></span>
+        <span class="dot" onclick="showSlides(2)"></span>
+        <span class="dot" onclick="showSlides(3)"></span>
+    </div>
+
     <section id="promo2" class="promo">
         <h2>Catch a Deal!</h2>
         <img>
@@ -40,6 +89,7 @@
 
 
     <footer>&copy; Dillon Greek</footer>
+    <script src="main.js"></script>
 </body>
 
 </html>
