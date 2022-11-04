@@ -9,18 +9,22 @@ nav {
     margin-bottom: 3em;
 
 }
-header{
+
+header h1 {
     background-image: url(img/baitshop.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 15%;
     background-position: center;
+    padding-bottom: 20%;
+    color: white;
+    text-shadow: 2px, 2px, 5px, black;
+    text-align: center;
 }
 
 nav a:hover {
     color: chartreuse;
-    
+
 }
 
 a {
@@ -40,11 +44,12 @@ section #promo {
 
 #promo2 {
     background-color: rgb(228, 228, 228);
-    border: 2px,2px, solid, black;
+    border: 2px, 2px, solid, black;
     color: rgb(0, 0, 0);
     width: 50%;
     margin: auto;
     border-radius: 25%;
+
 }
 
 aside {
@@ -74,11 +79,12 @@ aside {
 }
 
 .mySlides img {
-    max-width: auto;
-    max-height: 720px;
-    height: 720px;
+    max-width: 250px;
+    max-height: 300px;
+    height: 300px;
     width: auto;
     margin: auto;
+    object-fit: cover;
 }
 
 /* Next & previous buttons */
@@ -152,17 +158,26 @@ aside {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-.limg img{
-    width: 300px;
+
+.limg img {
+    width: 200px;
+    height: 200px;
     border-radius: 25%;
-    
+    object-fit: fill;
+
 }
-.limg{
-    font-size: 30px;
-    justify-content: center;
+
+.limg {
+    font-size: 16px;
     align-items: center;
     margin-bottom: 10px;
+    list-style: none;
+
+    text-align: center;
+
+
 }
+
 table {
     width: 100%;
     max-width: 500px;
