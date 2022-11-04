@@ -2,6 +2,7 @@ html {
     margin: auto;
     text-align: center;
     background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 nav {
@@ -22,18 +23,6 @@ body {
 
 }
 
-table {
-    width: 100%;
-    max-width: 500px;
-    min-width: 300px;
-    margin: auto;
-
-}
-
-thead {
-    background-color: green;
-
-}
 
 section #promo {
     background-color: blue;
@@ -62,17 +51,20 @@ aside {
     padding-right: 2%;
 }
 
+
 * {
     box-sizing: border-box
 }
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 650px;
+    max-width: 750;
+    width: 75%;
     position: relative;
     margin: auto;
     background-color: blue;
     padding-bottom: 2em;
+
 }
 
 /* Hide the images by default */
@@ -81,10 +73,11 @@ aside {
 }
 
 .mySlides img {
-    max-width: 650px;
+    max-width: auto;
     max-height: 720px;
     height: 720px;
     width: auto;
+    margin: auto;
 }
 
 /* Next & previous buttons */
@@ -159,12 +152,53 @@ aside {
     animation-duration: 1.5s;
 }
 
-@keyframes fade {
-    from {
-        opacity: .4
+table {
+    width: 100%;
+    max-width: 500px;
+    min-width: 300px;
+    margin: auto;
+    display: block;
+}
+
+thead {
+    background-color: green;
+}
+
+td .name {
+    width: 100px;
+    text-align: center;
+}
+
+td {
+    border-right: 2px, solid, black;
+}
+
+
+td img {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+
+@media only screen and (max-width: 1080px) {
+    body {
+        background-color: lightblue;
+        width: fit-content;
+        margin: auto;
     }
 
-    to {
-        opacity: 1
+    aside {
+        display: none;
     }
+
+    .slideshow-container {
+        width: fit-content;
+    }
+
+    .mySlides {
+        height: auto;
+        width: auto;
+    }
+
 }
