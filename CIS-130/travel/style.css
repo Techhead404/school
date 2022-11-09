@@ -1,0 +1,50 @@
+body {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    border: 2px solid black;
+}
+
+div {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    float: right;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+aside {
+    width: 25%;
+    align-content: center;
+    border: 2px solid rgb(0, 38, 255);
+}
+
+footer {
+    margin: auto;
+
+}
+
+@media only screen and (max-width:1080px) {
+    header {
+        width: 100%;
+    }
+
+    body {
+        width: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div {
+        flex-wrap: wrap;
+    }
+}
