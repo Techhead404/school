@@ -46,7 +46,7 @@ section #promo {
     background-color: rgb(228, 228, 228);
     border: 2px, 2px, solid, black;
     color: rgb(0, 0, 0);
-    width: 50%;
+    width: fit-content;
     margin: auto;
     border-radius: 25%;
 
@@ -159,22 +159,26 @@ aside {
     animation-duration: 1.5s;
 }
 
-.limg img {
-    width: 200px;
-    height: 200px;
+ul .limg img {
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 25%;
-    object-fit: fill;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+
 
 }
 
-.limg {
+ul .limg {
     font-size: 16px;
+    display: flex;
+    justify-content: center;
     align-items: center;
     margin-bottom: 10px;
     list-style: none;
-
     text-align: center;
-
+    width: 100%;
 
 }
 
@@ -190,27 +194,33 @@ thead {
     background-color: green;
 }
 
-td .name {
-    width: 100px;
-    text-align: center;
+.name {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 td {
     border-right: 2px, solid, black;
 }
 
+td .price {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 td img {
-    width: 50%;
+    width: 300px;
     height: auto;
     float: left;
-    display: flex;
+
 }
 
 
 @media only screen and (max-width: 1080px) {
     body {
-        background-color: lightblue;
         width: fit-content;
         margin: auto;
     }
@@ -228,4 +238,20 @@ td img {
         width: auto;
     }
 
+    .limg {
+        width: fit-content;
+    }
+
+    .limg img {
+        height: auto;
+        width: auto;
+    }
+
+    td img {
+        max-width: 200px;
+        width: auto;
+        height: auto;
+        float: left;
+
+    }
 }
