@@ -1,0 +1,5 @@
+
+server = ftp.otc.webdev.net
+username = dillong@otcwebdev.net
+password = !otcUserId
+port = 21
