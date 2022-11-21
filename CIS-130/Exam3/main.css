@@ -1,5 +1,55 @@
+body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    color: black;
+    display: flex;
+
+
+}
+
+header {
+    width: 100%;
+    height: 10em;
+    background-color: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+
+nav {
+    background-color: rgba(255, 0, 0, 0.75);
+    width: 50%;
+    height: 3em;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding-right: 2em;
+}
+
+#navBarlist a {
+    color: white;
+    width: 50%;
+    text-decoration: none;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+#navBarlist #ulBreak {
+    width: 3em;
+    border-right: 1px solid white;
+    margin-right: 5px;
+}
+
+
 @media only screen and (max-width:600px) {
-    body{
-        background-color: blue;
+    body {
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+
+    header {
+        background-color: white;
+        color: black;
     }
 }
