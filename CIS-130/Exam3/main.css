@@ -103,6 +103,14 @@ header {
     position: fixed;
 }
 
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: white;
+    scroll-snap-align: start;
+}
+
 h1 {
     font-size: 50px;
     font-family: 'Petit Formal Script', cursive;
@@ -257,42 +265,6 @@ li {
 
 }
 
-/*  
-side menu
-*/
-aside {
-    width: 25%;
-    height: fit-content;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    margin-right: 1em;
-    margin-left: 1em;
-    padding-top: 1em;
-}
-
-aside a {
-    width: max-content;
-    padding-left: 1em;
-    margin-bottom: 1em;
-    font-size: 16px;
-    float: left;
-    padding-right: 2em;
-
-}
-
-#side a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-}
-
-#side a:hover {
-    color: rgb(179, 179, 179);
-}
-
-#projectTopSection{
-    color: white;
-}
 
 h3 {
     font-size: 24px;
@@ -302,39 +274,16 @@ h3 {
 
 }
 
-table {
-    margin: auto;
-    border: 2px solid rgb(255, 255, 255);
-    width: 300px;
-    color: white;
-}
+/*Project Page*/
 
-td {
-    border: 1px solid rgb(255, 255, 255);
-    padding: 1em
-}
-
-#heading {
-    background-color: blue;
-    border-bottom: 2px solid black;
-}
-
-
-.texttable {
-    max-width: 300px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-footer {
+#project_top {
     display: flex;
-    align-content: center;
-    justify-content: center;
+    align-content: space-around;
+    justify-content: start;
     color: white;
-    scroll-snap-align: start;
+    font-size: large;
+    gap: 50px;
 }
-
 
 @media only screen and (max-width:450px) {
 

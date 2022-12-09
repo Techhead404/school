@@ -13,16 +13,26 @@
    student union.
 
 */
-
+//Strict to load after HTML
 "use strict";
+//Get the date
 const thisDate = new Date("October 12, 2018");
-const dateString = thisDate;
-const dateHTML = "<h2>date</h2>";
+const dateString = thisDate.toLocaleDateString('en-us');
+//create element to be added
+const dateHTML = "<h2>"+dateString+"</h2>";
+//Get the day of the week number
 const thisDay = thisDate.getDay();
+//get html for current date
+var eventHTML = getEvent(thisDay);
+//Set the html beforeend 
+document.getElementById("unionToday").insertAdjacentHTML("beforeend", dateHTML+eventHTML);
 
+
+//const subject = document.getElementById("unionToday");
+//subject.insertAdjacentHTML(dateHTML, getEvent(thisDate));
 
 function getEvent(day) {
-   var eventHTML;
+
    switch (day) {
       case 0: // Sunday Events
       eventHTML = "<dl> \
