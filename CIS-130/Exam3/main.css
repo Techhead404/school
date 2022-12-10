@@ -83,6 +83,7 @@ video {
 
 html {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -168,7 +169,7 @@ Top section on main page
     padding-top: 22vh;
 }
 
-.page{
+.page {
     height: 100vh;
     width: 100%;
     display: block;
