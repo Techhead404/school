@@ -150,7 +150,7 @@ nav {
 
 }
 
-#navBarlist #ulBreak {
+#navBarlist .ulBreak {
     width: 3em;
     border-right: 1px solid white;
     margin-right: 5px;
