@@ -83,6 +83,8 @@ video {
 
 html {
     scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -92,6 +94,10 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+input {
+    caret-color: blue;
 }
 
 header {
@@ -144,7 +150,7 @@ nav {
 
 }
 
-#navBarlist #ulBreak {
+#navBarlist .ulBreak {
     width: 3em;
     border-right: 1px solid white;
     margin-right: 5px;
@@ -168,7 +174,7 @@ Top section on main page
     padding-top: 22vh;
 }
 
-.page{
+.page {
     height: 100vh;
     width: 100%;
     display: block;
@@ -218,7 +224,7 @@ Top section on main page
 /*
 Middle section main page
 */
-#mid {
+.mid {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -269,6 +275,11 @@ h3 {
     font-family: 'Petit Formal Script', cursive;
     text-decoration: underline;
     font-weight: 900;
+}
+
+#leftList2 {
+    columns: 2;
+    column-gap: 2em;
 }
 
 @media only screen and (max-width:450px) {
