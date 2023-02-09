@@ -1,0 +1,36 @@
+#top_div {
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25%;
+    width: fit-content;
+
+}
+
+#top {
+    width: 650px;
+    height: 600px;
+
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    display: inline;
+    width: 25%;
+
+}
+
+/* Clear floats after image containers */
+#row {
+    content: "";
+    clear: both;
+    display: table;
+    margin: auto;
+    margin-top: 10%;
+
+}
+
+.column img {
+    width: 250px;
+    height: 200px;
+}
