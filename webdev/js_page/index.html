@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Document</title>
 </head>
-<body class="bg-gray w-100">
-    <header class="bg-black m-auto">
-        <h1 class="h1 m-auto">JavaScript Page.</h1>
-    </header>
-    <form class ="mx-auto mt-5 w-25">
-        <div class="mb-3">
-            <label for="iFirstName" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="iFirstName">
-          </div>
-          <div class="mb-3">
-            <label for="iLastName" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="iLastName">
-          </div>
-        <div class="mb-3">
-          <label for="iEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="iEmail">
-          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3 form-check w-50 m-auto">
-          <input type="checkbox" class="form-check-input" id="subCheckBox">
-          <label class="form-check-label" for="subCheck">Add to Email list</label>
-        </div>
-        <button type="submit" class="btn btn-primary" onclick="test()">Submit</button>
-      </form>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+
+<body class="w-100">
+  <header class="bg-black text-light m-auto p-3">
+    <h1 class="h1 m-auto text-center">JavaScript Page.</h1>
+  </header>
+  <form class="mx-auto mt-5 w-25" id="form">
+    <div class="mb-3">
+      <label for="iFirstName" class="form-label">First Name</label>
+      <input type="text" class="form-control" id="iFirstName" required>
+    </div>
+    <div class="mb-3">
+      <label for="iLastName" class="form-label">Last Name</label>
+      <input type="text" class="form-control" id="iLastName" required>
+    </div>
+    <div class="mb-3">
+      <label for="iEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="iEmail" required>
+    </div>
+    <div class="mb-3 form-check w-50 m-auto">
+      <input type="checkbox" class="form-check-input" id="subCheckBox">
+      <label class="form-check-label" for="subCheck">Add to Email list</label>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="test()">Submit</button>
+  </form>
+  <!-- Output area -->
+
+  <dl class="row d-none mx-auto mt-5 w-50 text-center" id="row">
+    <dt class="col-sm-3">Input type</dt>
+    <dt class="col-sm-9">Input data</dt>
+
+    <dt class="col-sm-3 mt-5">Name</dt>
+    <dd class="col-sm-9 mt-5" id="outputName"></dd>
+
+    <dt class="col-sm-3">Email</dt>
+    <dd class="col-sm-9" id="outputEmail"></dd>
+
+    <dt class="col-sm-3">Subscribed</dt>
+    <dd class="col-sm-9" id="outputSub"></dd>
+  </dl>
+
+  <script src="main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
