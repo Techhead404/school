@@ -4,3 +4,23 @@
     border-radius: 50%;
     display: inline-block;
 }
+
+.player1 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: blue;
+    position: absolute;
+    top:60px;
+}
+
+.player2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: yellow;
+    position: absolute;
+    top: 40px;
+}

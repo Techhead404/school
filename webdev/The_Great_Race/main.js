@@ -17,6 +17,24 @@ window.addEventListener('load', function(){
 
     //Start the race.
     function start_race(){
+            var player1 = document.createElement("img");
+            player1.id = "player1";
+            player1.src = "#";
 
+            var player2 = document.createElement("img");
+            player2.id = "player2";
+            player2.src = "#";
+            
+            console.log(rand());
+            player1.style.left = rand();
+            player2.style.left = rand();
+            
+            
     }
+
+    function rand(){
+        var num = Math.floor(Math.random() * 50);
+        return num;
+    }
+
 })
