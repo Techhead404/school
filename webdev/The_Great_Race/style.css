@@ -1,26 +1,40 @@
+/* Name: Dillon Greek
+    Class: CIS-131
+    Date: 03/14/23
+    Assignment: The Great Race */
+
+body {
+    background-image: url("img/dog.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .dot {
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
-    display: inline-block;
+    display: block;
+
 }
 
 .player1 {
-    height: 50px;
-    width: 50px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
-    display: inline-block;
-    background-color: blue;
     position: absolute;
-    top:60px;
+    top: 200px;
+    left: 10px;
 }
 
 .player2 {
-    height: 50px;
-    width: 50px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
-    display: inline-block;
     background-color: yellow;
+
     position: absolute;
-    top: 40px;
+    top: 500px;
+    left: 10px;
+
+
 }
