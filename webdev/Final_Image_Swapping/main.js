@@ -23,53 +23,41 @@ let img_col;
 
 window.addEventListener('load', function(){
 
-    var mySrc;
+    // Create the large top image and append to div
     const large_img = this.document.createElement("img");
     large_img.src = "img1/" + array1[1];
     large_img.id = "large_img1";
     large_img.alt = "img1/";
+    var img_div = this.document.getElementById("large_img");
+    img_div.appendChild(large_img);
+
+    //Run the swapping() to change thumbnail imgs
+    timer = this.setInterval(swapping, 5000);
     
-    var lrg = this.document.getElementById("large_img");
-    lrg.style.width = "600px";
-    lrg.appendChild(large_img);
-
-
-
-    var timer = this.setInterval(swap_img, 2000);
-    
-    function rand(){
-        let rand = Math.floor(Math.random() * array1.length);
-        return rand;       
-    }
-
+    //loop through img array and create "img" for each one
+    //also adding the event listener to them before appending to the img_col div
     for(let i = 0; i < array1.length; i++){
         img_col = this.document.createElement("img");
         img_col.src = large_img.alt + array1[i];
-        const div_col = this.document.createElement("div");
-        div_col.className = "column , p-3 , d-inline";
-        this.document.getElementById("row").appendChild(div_col);
-        div_col.appendChild(img_col);
+        img_col.className = "img_thumb";
+        img_col.addEventListener('click', function(){       
+            large_img.src = this.src;
+        });
+        this.document.getElementById("row").appendChild(img_col);
     }  
-    
-    large_img.addEventListener('click', swapping);
 
-    function swap_img(){
-        console.log("running");
-        this.document.getElementById("large_img").src = "img1/" +  array1[3];
-        
-    }
+    //loops through checking each img alt to see if it is img1 or img2 I used the alt as a way to track 
+    //part of the src. Not sure if there was a better way but this way works. 
     function swapping() {
-        let img_count = document.getElementsByTagName('img');
+        let img_count = document.getElementsByClassName('img_thumb');
         console.log(this.alt)
-        for (let i = 0; i < img_count.length - 1; i++){
+        for (let i = 0; i < img_count.length; i++){
 
             if (this.alt == "img1/"){       
-                img_count[i + 1].src = "img2/" + array2[i];
-                console.log(i, img_count[i].src);
+                img_count[i].src = "img2/" + array2[i];
             }
             else{
-                img_count[i + 1].src = "img1/" + array1[i];
-                console.log(i, img_count[i].src);
+                img_count[i].src = "img1/" + array1[i];
             }
         }
         if(this.alt == "img1/"){

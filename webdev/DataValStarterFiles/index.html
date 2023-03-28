@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <title>Form Validation & RegEx</title>
+</head>
+<body>
+    <h3>Javascript and Data Validation</h3>
+
+    <!-- Error Message if Invalid Data Entered -->
+    <div id="error" style="display:none">Please Fix Errors</div>
+
+    <!-- Form to gather information -->
+    <form action="thankyou.html" id="myForm" method="get">
+        <!-- Get the users name -->
+        <input type="text" name="first" id="firstName">
+        <!-- A message box that displays error message -->
+        <span id="errName" style="display:none" name="errName">* OOPS</span>
+        <!-- Get the zip code -->
+        <input type="text" name="zip" id="zip">
+        <!-- create a submit button -->
+        <input type="submit" value="Click" id="submitIt">
+
+    </form>
+    
+</body>
+</html>
