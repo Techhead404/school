@@ -52,7 +52,11 @@ function validate(e) {
     theForm.submit();
   }
   else{
-    document.getElementById('error').style.display="block";
     e.preventDefault();
   }
+  
 }
+const pizzatype = document.getElementById("pizzadrop");
+  pizzatype.addEventListener("select", function(){
+    console.log(pizzatype.value);
+  })

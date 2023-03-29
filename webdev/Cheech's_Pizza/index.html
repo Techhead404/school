@@ -6,33 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <title>Form Validation & RegEx</title>
 </head>
 
 <body>
-    <h3>Javascript and Data Validation</h3>
-
-    <!-- Error Message if Invalid Data Entered -->
-    <div id="error" style="display:none">Please Fix Errors</div>
+    <nav class="navbar navbar-text bg-dark text-light">Pizza</nav>
 
     <!-- Form to gather information -->
     <form action="thankyou.html" id="myForm" method="get">
         <!-- Get the users name -->
-        <label for="first">First Name:</label>
-        <input type="text" name="first" id="firstName" required>
-        <!-- A message box that displays error message -->
-        <span id="errName" style="display:none" name="errName">* OOPS</span>
+        <div class="form-label">
+            <label for="first">First Name:</label>
+            <input type="text" name="first" id="firstName">
+            <span id="errName" style="display:none" name="errName">* OOPS</span>
+        </div>
         <!-- Phone number -->
-        <label for="phone">Phone Number:</label>
-        <input type="tel" name="phone" id="phone" pattern="{3}-{3}-{4}" required>
+        <div class="form-label">     
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" pattern="{3}-{3}-{4}">
+            <span id="errPhone" style="display:none" name="errPhone">* OOPS</span>
+        </div>
         <!-- Get the zip code -->
-        <label for="zip">Zip Code:</label>
-        <input type="text" name="zip" id="zip">
-        <!-- create a submit button -->
+        <div class="form-label">
+            <label for="zip">Zip Code:</label>
+            <input type="text" name="zip" id="zip">
+            <span id="errZip" style="display:none" name="errZip">* OOPS</span>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" id="pizzadrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" value="pizza1">Pizza 1</a></li>
+              <li><a class="dropdown-item" href="#" value="pizza2">Pizza 2</a></li>
+              <li><a class="dropdown-item" href="#" value="pizza3" >Pizza 3</a></li>
+            </ul>
+          </div>
+            <!-- create a submit button -->
         <input type="submit" value="Click" id="submitIt">
 
     </form>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
 </body>
 
 </html>
