@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
     Dillon Greek
     Date: 03/29/23
@@ -64,4 +65,72 @@
 
 .form-label {
     display: grid;
+=======
+/*
+    Dillon Greek
+    Date: 03/29/23
+    Class: CIS-131
+    Assignment: Validating - Cheech's Pizza Online Ordering 
+*/
+
+#navbar {
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: xx-large;
+    -webkit-text-stroke: 1px rgb(255, 0, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    text-shadow: 5px 3px 5px #000000;
+    border-bottom: 3px solid red;
+}
+
+#myForm {
+    width: 25vw;
+    height: fit-content;
+    color: white;
+    margin-top: 8%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+}
+
+#home_body {
+    background-image: url(img/1993_background_1984x900.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#order_body {
+    height: 100vh;
+    background-image: url(img/1078503.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-content: end;
+    align-items: center;
+    padding-right: 8%;
+}
+
+#order_box {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: max-content;
+    width: 40vw;
+    display: grid;
+    justify-content: center;
+    border-radius: 2em;
+    border: 3px solid red;
+}
+
+
+.form-label {
+    display: grid;
+>>>>>>> f115227b503222aff5cae294e1f7567cdcc8d78b
 }
