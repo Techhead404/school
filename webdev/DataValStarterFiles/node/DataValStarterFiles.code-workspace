@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../Cheech's_Pizza"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "DataValStarterFiles"
+	}
+}

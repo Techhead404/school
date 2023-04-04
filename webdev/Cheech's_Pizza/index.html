@@ -1,3 +1,9 @@
+<!-- 
+    Dillon Greek
+    Date: 03/29/23
+    Class: CIS-131
+    Assignment: Validating - Cheech's Pizza Online Ordering
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,49 +12,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="#">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <title>Form Validation & RegEx</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon-16x16.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <title>Remingtons Pizza</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-text bg-dark text-light">Pizza</nav>
+<body id="home_body">
+    <nav class="navbar navbar-text justify-content-center" id="navbar">Remingtons Pizza Place</nav>
 
     <!-- Form to gather information -->
-    <form action="thankyou.html" id="myForm" method="get">
+    <form action="thankyou.html" id="myForm" class="mx-auto" method="get">
         <!-- Get the users name -->
         <div class="form-label">
             <label for="first">First Name:</label>
             <input type="text" name="first" id="firstName">
-            <span id="errName" style="display:none" name="errName">* OOPS</span>
+            <span id="errName" style="display:none" name="errName"></span>
         </div>
         <!-- Phone number -->
-        <div class="form-label">     
-            <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phone" pattern="{3}-{3}-{4}">
-            <span id="errPhone" style="display:none" name="errPhone">* OOPS</span>
-        </div>
-        <!-- Get the zip code -->
         <div class="form-label">
-            <label for="zip">Zip Code:</label>
-            <input type="text" name="zip" id="zip">
-            <span id="errZip" style="display:none" name="errZip">* OOPS</span>
+            <label for="phone">Phone Number:</label>
+            <input type="tele" name="phone" id="phone">
+            <span id="errPhone" style="display:none" name="errPhone"></span>
         </div>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" id="pizzadrop" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown button
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" value="pizza1">Pizza 1</a></li>
-              <li><a class="dropdown-item" href="#" value="pizza2">Pizza 2</a></li>
-              <li><a class="dropdown-item" href="#" value="pizza3" >Pizza 3</a></li>
-            </ul>
-          </div>
-            <!-- create a submit button -->
-        <input type="submit" value="Click" id="submitIt">
+        <!-- Dropdown for toppings and amount -->
+        <div class="d-block mt-3 justify-content-center">
+            <p>Toppings
+                <select id="drop_toppings" name="toppings">
 
+                </select>
+            </p>
+            <p>Amount
+                <select id="drop_amount" name="amount">
+                    <span id="errAmount" style="display:none" name="errAmount"></span>
+                </select>
+            </p>
+        </div>
+        <!-- create a submit button -->
+        <input type="submit" class=" mx-auto my-1" value="Order" id="submitIt">
     </form>
     <script src="main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
