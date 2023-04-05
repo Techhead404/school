@@ -1,0 +1,23 @@
+html{
+    background-image: url(img/DiabloBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    width: 40%;
+    display: inline;
+/* 
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto; */ 
+}
+
+#contactDiv{
+    float: left;
+}
+#rightContainer{
+    float: right;
+}

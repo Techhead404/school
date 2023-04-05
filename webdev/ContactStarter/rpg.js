@@ -4,6 +4,7 @@ window.addEventListener('load', function() {
 
 const players = [];
 var player_img = document.getElementById("contactImg");
+var listofnames = [];
 
 class player{
     constructor(aname, ahealth, astrength){
@@ -13,7 +14,9 @@ class player{
     players.push(this);
     }
     imgSwap(text){
-        document.getElementById("contactImg").src = `img/${text}.png`;
+        let mainImg = document.getElementById("contactImg");
+        mainImg.src = `img/${text}.png`;
+        mainImg.alt = `${text} Image`;
     }
 }
 
@@ -41,15 +44,12 @@ players.forEach(element  => {
 
 function addPlayer(e){
 
-    theForm = document.getElementById("myform");
-
+    theForm = document.getElementById("myform"); 
     const newPep = new player(theForm.fname.value, theForm.fst.value , theForm.fhp.value);
-
+    let listofnames = [];
     players.forEach(element => {
-        if(element.name == newPep.name){
-            
-        }
-    });
+        listofnames.push(element.name.value);
+    })
 
     var newPlayer = document.createElement("li");
     newPlayer.innerHTML = newPep.name;
@@ -61,3 +61,4 @@ function addPlayer(e){
     });
     player_list.appendChild(newPlayer);
 }
+
