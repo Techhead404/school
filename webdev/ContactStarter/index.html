@@ -1,3 +1,9 @@
+<!-- 
+Dillon Greek
+Date: 04/05/23
+Class: CIS-131
+Assignment: Classy Address Book 
+-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,36 +12,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-    <style>
-        img {
-            width: 300px;
-            height: 250px;
-        }
-    </style>
+    <title>Classy Address Book</title>
+
 </head>
 
 <body>
-    
-    
-    <div id="contactDiv">
-        <img id="contactImg" src="#" alt="#" >
-        <h1 id="playerName">Snow White</h1>
-    </div>
-    <div id="rightContainer">
-    <ul id="contactList">Players</ul>
-    <script src="rpg.js"></script>
-    <form id="myform" method="get">
-        <input type="text" name="fname" id="fname">
-        <label for="fname">Name</label>
-        <input type="text" name="fst">
-        <label for="fst">Strength</label>
-        <input type="text" name="fhp">
-        <label for="fhp">HP</label>
-        <input type="button" value="Click" id="submit_btn">
 
-    </form>
+    <div id="mainDiv">
+        <div id="contactDiv">
+            <img id="contactImg">
+            <h1 id="playerName"></h1>
+        </div>
+        <div id="centerContainer">
+            <span id="listTitle">Players</span>
+            <ul id="contactList"></ul>
+        </div>
+        <div id="rightContainer">
+            <form id="myform" method="get">
+                <input type="text" name="fChampion" id="fChampion">
+                <label for="fname">Champion</label>
+                <input type="text" name="fFirstName">
+                <label for="fst">First Name</label>
+                <input type="text" name="fLastName">
+                <label for="fhp">Last Name</label>
+                <input type="text" name="fEmail">
+                <label for="fhp">Email</label>
+                <input type="button" value="Submit" id="submit_btn">
+            </form>
+        </div>
     </div>
+    <script src="rpg.js"></script>
 </body>
 
 </html>
