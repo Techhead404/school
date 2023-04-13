@@ -7,12 +7,34 @@ document.getElementById("getRocket").addEventListener('click', () => {
     httpRequest = new XMLHttpRequest();
     httpRequest.open("GET", "https://lldev.thespacedevs.com/2.2.0/launch/")
     httpRequest.send();
-    httpRequest.onreadystatechange = aFunction;
+    httpRequest.onreadystatechange = rocketFunction;
     
 })
 
+document.getElementById("getRocket").addEventListener('click', () => {
+    httpRequest = new XMLHttpRequest();
+    httpRequest.open("GET", "https://lldev.thespacedevs.com/2.2.0/launch/")
+    httpRequest.send();
+    httpRequest.onreadystatechange = astroFunction;
+    
+})
+function rocketFuntion(){
+    if (httpRequest.readyState == 4 && httpRequest.status == 200){
+        var astro = httpRequest.responseText;
 
-function aFunction(){
+        const astroobj = JSON.parse(astro);
+        //console.log(rocketobj.results[0]);
+
+        for(var i = 1; i < 5; i++){
+            console.log(astroObj);
+            // let rocketimg = document.getElementById("rocket"+[i])
+            // let rocketspn = document.getElementById("rocket"+[i]+"spn");
+            // rocketimg.src = rocketobj.results[i].image;
+            // rocketspn.innerHTML = rocketobj.results[i].name;
+        }
+    }
+}
+function astroFuntion(){
     if (httpRequest.readyState == 4 && httpRequest.status == 200){
         var rocket = httpRequest.responseText;
 
@@ -21,8 +43,10 @@ function aFunction(){
 
         for(var i = 1; i < 5; i++){
             console.log("rocket"+[i]);
-            var rocketimg = rocketobj.results[i].image;
-            document.getElementById("rocket"+[i]).src = rocketimg;
+            let rocketimg = document.getElementById("rocket"+[i])
+            let rocketspn = document.getElementById("rocket"+[i]+"spn");
+            rocketimg.src = rocketobj.results[i].image;
+            rocketspn.innerHTML = rocketobj.results[i].name;
         }
     }
 }
