@@ -1,31 +1,11 @@
 // Name: Dillon Greek
 // Class: CIS-131
 // Date: 04/24/2023 
-
-const app =  Vue.createApp({
-    
-    data() {
-        return {
-            
-        }
-    } ,
-    methods:{
-        useAPI(){
-            axios.get("https://api.themoviedb.org/3/movie/now_playing?api_key=70ef7c62eee1244489c96681175a2a0f&language=en-US&page=1")
-            .then( (response) => {
-                //console.log(response.data.results)
-                newArray = response.data.results.map((obj)=>{
-                    let tmpObj = {
-                        title: obj.title,
-                        img: "https://image.tmdb.org/t/p/w500/" + obj.poster_path,
-                        overview: obj.overview
-                    }
-                    return tmpObj
-                })
-                this.movies = newArray;
-            })
-        }
-    }
-    
-    
-}).mount("#app")
+//Api key: 772e7ef90c9a265bee8184b9e6ca062e
+newArray = [];
+axios.get("https://api.openweathermap.org/data/2.5/weather?zip=65648,us&appid=772e7ef90c9a265bee8184b9e6ca062e")
+.then((response)=>{
+    newArray = response.data;
+       
+    console.log(newArray);
+})

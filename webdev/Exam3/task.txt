@@ -1,0 +1,25 @@
+Current Weather 
+
+Summary: You will create a page where a user can enter a zip code and choose between Celsius or Fahrenheit. The page will return the current temperature, current conditions and city. You may assume for this assignment that your page only accepts US zip codes.
+
+API: The api you will use is from OpenWeather (openweathermap.org)
+
+JavaScript: 
+    • For the API call - you may use the XMLHttpRequest object or Axios. If we didn’t cover it, you will not get credit for it, so if you are unsure – ASK FIRST
+
+
+User Screen: Your user should enter in a zip code and a choice between C or F. Your JavaScript should validate the user entry (the zip code in particular) before it sends the api call. NO HTML VALIDATION!!! 
+    • an invalid zip code entry may be 62
+    • You may assume for this assignment only US zip codes are valid
+    • If a user’s entry is invalid – give clear indication of what your user SHOULD enter
+        ◦ “NOT VALID” isn’t too helpful
+        ◦ “Zip code must contain…. “ more helpful
+
+Returned to User: Based on the user’s entry, the page should return the following visuals. 
+    • Temperature (C or F as selected by user) – (returned from the api) – not a javascript calculation
+    • City name – (returned from the api) 
+    • Current conditions – ie Clouds, Sunny etc  – (returned from the api)
+    • Icon/Image representing the current conditions – written description optional (i.e. partly cloudy) - – (returned from the api)
+    • The data and subsequent page update should be based on updating the DOM (not via a page reload or form submission)
+
+Your page MUST look professional! 
