@@ -1,0 +1,45 @@
+Movie Ticket Purchase:
+Using Vue.js create the ability for a user to choose movie tickets for at least 3 movies, for either/both child and adults. 
+
+Overall Project Requirements:
+1) Site must LOOK PROFESSIONAL! After all this is a WebDev II class!
+2) Hardcoding of movies should be avoided – like the plague. For example, if your code allows for three movies and I change that to 4 while grading, the cart should JUST WORK. No recoding should be necessary. (Within reason. I understand your code layout may look best with 3 movies, and when I change your ajax object to work with 8 movies,  things look caty-wompus. This is not what I am referring to)
+3) All shopping cart functionality should be done using vue.js. NO PAGE RELOADS or form posting is used to complete this project. 
+4) Be as efficient with your code as possible. If you see yourself repeating code – find another way. 
+
+Requirements for the shopping cart data:
+1)	Movies will be data received from the Movie DB API. 
+2)	Using an asynchronous call – obtain three mvoies (no more – no less)  from the NOW PLAYING category. 
+3)	Display the returned Json data using VUE.  
+4)	Create the Vue instance. 
+a.	Contained in the Vue instance will be your array of movie objects
+b.	The vue instance should contain a function to display the totals
+i.	You can use a computed property or a function. 
+5)	Create a ‘movie’ component
+a.	Each movie, title, image, description and cart buttons MUST utilize this Vue Component 
+b.	Provide a way for the user to choose either a child’s ticket or an adult’s ticket from each movie/tv category
+
+Ticket  Summary:
+•	Subtotals:
+o	Qty of children’s tickets purchased per movie
+o	Qty of adult’s tickets purchased per movie
+o	Subtotal of children and adult tickets per movie
+•	Totals:
+o	Total of Adults tickets purchased (qty and price)
+o	Total of Children’s tickets purchased (qty and price)
+o	Combined Total of all purchased tickets (qty and price)
+ 
+Ticket Summary Functionality:
+•	User should be able to decrease the adult tickets or children’s tickets purchased
+•	User should be able to delete an entire movie purchase 
+•	If an item qty is zero – it should not be displayed (for example no children’s tickets shown below)
+•	If the movie is removed completely, it shouldn’t show up in the list
+•	Each movie should only show up once
+ 
+•	If no tickets are purchased yet, the Ticket Summary should not show
+Screenshots of examples below:
+
+My Example Screenshots
+ 
+ 
+

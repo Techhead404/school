@@ -1,0 +1,37 @@
+<!-- 
+Name: Dillon Greek
+Class: CIS-131
+Date: 04/27/2023 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Ticket Purchase</title>
+</head>
+
+<body>
+    <div id="app">
+        <h1> {{message}}</h1>
+        <div v-for="movie in movies">
+            <div class="card" style="width: 18rem;">
+                <img v-bind:src="movie.img" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{movie.title}}</h5>
+                    <p class="card-text">{{movie.overview}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button v-on:click="useAPI">Get Movies</button>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,14 @@
 /* 
 Name: Dillon Greek
 Class: CIS-131
-Date: 04/24/2023  
+Date: 04/26/2023  
 */
+body {
+    background-image: url(./weather.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#topdiv {
+    background-color: rgba(255, 255, 255, 0.574);
+}

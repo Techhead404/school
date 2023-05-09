@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.4.js"></script>
+    <style>
+        .purple {background-color: purple;}
+    </style>
+</head>
+<body>
+    
+    <script>
+        function getText(){
+            console.log($("p").text());
+        }
+        function stripe(){
+            $("#second").toggleClass("purple");
+        }
+    </script>
+
+    <p id="second">Some Text</p>
+    <input type="button" value="click" onclick="getText()">
+    <input type="button" value="Purple" onclick="stripe()">
+    
+    <hr>
+
+    <div id="slide" style="width:150px; position: relative;">Here is the slider</div>
+    <button id="slideThis">Slide</button>
+    
+    <hr>
+
+    <h1>Here is a title</h1>
+    <p id="hideThis">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit maxime sapiente voluptas nihil repellat culpa, fugit, explicabo eaque quaerat necessitatibus officiis dolore architecto impedit error voluptate expedita labore! Neque ullam, beatae, voluptate saepe amet consectetur nostrum provident deserunt in expedita consequatur? Architecto rem sunt eaque quia natus soluta veritatis, animi consequatur illo iste ipsum, aspernatur maxime dolore, voluptas a laboriosam. Porro odit, possimus, non, error consequatur ut ducimus odio illo tempora optio corporis a maxime voluptate eius sed assumenda! Aperiam, dignissimos vero laborum nam esse consequatur officiis alias obcaecati nihil voluptas recusandae possimus, odit, est molestiae repellendus veritatis deserunt explicabo vitae. Amet dicta, quos est possimus consectetur veritatis dignissimos optio corrupti ipsam consequuntur, esse repellendus quibusdam modi asperiores enim doloribus porro vel quidem laborum voluptas temporibus tempore totam? Debitis tempora in quisquam modi libero suscipit esse ipsa unde impedit sint, quibusdam animi autem rerum vero sunt consequuntur consequatur voluptates doloribus, quasi enim. Sit quas, accusantium ab dolores, ratione aliquam dignissimos, sint a cupiditate iusto harum alias possimus culpa. Deleniti, eos a, ipsa fugit qui, quos ad officiis atque pariatur repudiandae consequatur non quibusdam itaque blanditiis aliquid reprehenderit sit dolorem. Eos ea quas perferendis voluptas aut eius mollitia fugiat harum molestias adipisci! Repellat, officia aliquid nihil inventore libero ratione cum! Excepturi quibusdam est deleniti nesciunt non officia sapiente tempore nemo consectetur tempora numquam sunt, optio inventore culpa quos sit totam, iste repellat. Mollitia laudantium consequatur earum iusto repellendus ex itaque porro, doloribus voluptates ullam enim eligendi adipisci molestias veritatis accusantium eveniet!</p>
+    <script src="app.js"></script>
+</body> 
+</html>

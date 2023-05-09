@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Dillon Greek
+Form Objects
+ -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#">
+        <label for="fname">Name</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="femail">Email</label>
+        <input type="email" name="femail" id="femail">
+
+        <label for="fdate"> Date</label>
+        <input type="date" id="fdate" name="fdate">
+        <hr>
+        <label for="ffile">Upload Document</label>
+        <input type="file" id="ffile" name="ffile">
+        <hr>
+        <label for="ffile_location">Where to upload</label>
+
+        <select id="ffile_location" name="ffile_location" size="1">
+            <option value="C:\">Root Directory</option>
+            <option value="Desktop">Desktop</option>
+            <option value="Pictures">Image Folder</option>
+            <option value="OneDrive">Cloud Storage</option>
+        </select>
+        <hr>
+        <label for="ftextarea">Description of upload.</label>
+        <textarea id="ftextarea" name="ftextarea" rows="10" cols="20" maxlength="256"></textarea>
+        <hr>
+        <button type="button"
+            onclick="console.log(document.getElementById('fname').value) ; console.log(document.getElementById('femail').value); console.log(document.getElementById('fdate').value); console.log(document.getElementById('ffile').value); console.log(document.getElementById('ffile_location').value); console.log(document.getElementById('ftextarea').value)">
+            Upload</button>
+        <hr>
+        <button type="reset" onclick="console.log('Form Cleared')">Clear Form</button>
+
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
