@@ -48,12 +48,6 @@ const app =  Vue.createApp({
             })
         }
     },
-    // template: `<div class="card" style="width: 18rem;">
-    // <div class="card-body">
-    // <h5 class="card-title">{{movie.title}}</h5>
-    // <p class="card-text" {{this.overview}}></p>
-    // </div>
-    // </div>`
-    
+
 }).mount("#app")
 
