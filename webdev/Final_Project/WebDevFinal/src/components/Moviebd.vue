@@ -22,6 +22,9 @@
                    this.movies = newArray
                    return this.movies;
                 })
+            },
+            addToCart(){
+
             }
         },
         mounted(){
@@ -41,18 +44,12 @@
                         <h5 class="card-title">{{movie.title}}</h5>
                         <p class="card-text">{{movie.overview}}</p>
                     </div>
-                    <div class="input-group">
-                        <select class="custom-select" id="inputGroupSelect04">
-                            <option selected>Choose...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                        </select>
-                        <div class="input-group-append">
-                            <button class="btn btn-outline-secondary" type="button">Button</button>
+                    <div class="input-group d-flex justify-content-between">
+                        <button class="btn btn-outline-secondary w-50" type="button" >Child</button>
+                        <button class="btn btn-outline-secondary w-50" type="button">Adult</button>
                         </div>
                     </div>  
-                </div> 
+                
         </div>
     </div>
 </div>
