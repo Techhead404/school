@@ -4,7 +4,15 @@
     export default{
         data(){
             return{
-                movies:[]
+                movies:[],
+                movieInfo:[]
+            }
+        },
+        props:{
+            movieInfo:{
+                movieName: String,
+                kidTicket: Number,
+                adultTicket: Number,
             }
         },
         methods:{
