@@ -1,3 +1,9 @@
+<!-- 
+Dillon Greek
+Date: 05/14/23
+Class: CIS-131
+Assignment: Final
+-->
 <script>
     import axios from 'axios'
 
@@ -5,14 +11,7 @@
         data(){
             return{
                 movies:[],
-                movieInfo:[]
-            }
-        },
-        props:{
-            movieInfo:{
-                movieName: String,
-                kidTicket: Number,
-                adultTicket: Number,
+                movieInfo: [],
             }
         },
         methods:{
@@ -31,9 +30,19 @@
                    return this.movies;
                 })
             },
-            addToCart(){
-
-            }
+            addToCart(movieName, ticketType){
+                if(ticketType =="kid"){
+                    this.movieInfo.push({'title':movieName, 'Type':"kid"})
+                    
+                    console.log("Kid Added")
+                    
+                }
+                else{
+                    this.movieInfo.push({'title':movieName, 'Type':"adult"})
+                    
+                    console.log("Adult Added")
+                }
+            },        
         },
         mounted(){
             this.getMovie()
@@ -43,22 +52,24 @@
 </script>
 
 <template>      
+
 <div class="container">
     <div class="row">  
         <div v-for="movie in movies.slice(0,3)" class="col-lg-4">       
-                <div class="card" style="width: 18rem;">
-                    <img v-bind:src="movie.img" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title">{{movie.title}}</h5>
-                        <p class="card-text">{{movie.overview}}</p>
-                    </div>
-                    <div class="input-group d-flex justify-content-between">
-                        <button class="btn btn-outline-secondary w-50" type="button" >Child</button>
-                        <button class="btn btn-outline-secondary w-50" type="button">Adult</button>
-                        </div>
-                    </div>  
-                
+            <div class="card" style="width: 18rem;">
+                <img v-bind:src="movie.img" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">{{movie.title}}</h5>
+                    <p class="card-text">{{movie.overview}}</p>
+                </div>
+                <div class="input-group d-flex justify-content-between">
+                    <button @click="addToCart(movie.title,'kid')" class="btn btn-outline-secondary w-50" type="button" >Child</button>
+                    <button @click="addToCart(movie.title,'adult')" class="btn btn-outline-secondary w-50" type="button">Adult</button>
+                </div>
+            </div>        
         </div>
     </div>
 </div>
 </template>
+
+  
